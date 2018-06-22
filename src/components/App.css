@@ -1,0 +1,10 @@
+.App {
+  text-align: center;
+}
+
+.homeTop{
+background: url("../images/banner.png") no-repeat;
+  background-size: cover;
+  height: 120px;
+  width: 100%;
+}
