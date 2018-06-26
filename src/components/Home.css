@@ -1,5 +1,7 @@
 .App {
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .homeTop {
@@ -10,7 +12,6 @@
     display: flex;
     align-items: center;
 }
-
 button.weui-btn.homeTop-button {
     width: 2.4rem;
     color: #fff;
@@ -26,40 +27,6 @@ button.weui-btn.homeTop-button {
 
 }
 
-.home-list-top {
-    display: flex;
-    font-size: .28rem;
-    align-items: center;
-    padding: .1rem .12rem;
-    border-bottom: 1px solid #e1e1e1;
-}
-
-.home-list-top p {
+.home-middle{
     flex: 1;
-    text-align: left;
-    display: flex;
-    align-items: center;
-}
-
-.home-list-top-img {
-    width: 0.48rem;
-    height: 0.48rem;
-    margin-right: .15rem;
-}
-.home-list-middle {
-    display: flex;
-}
-.home-list-middle p{
-    flex: 1;
-}
-.xiajiantou{
-    height: 0.2rem;
-    width: 0.3rem;
-    margin-left: .15rem;
-
-}
-.youjiantou{
-    height: 0.3rem;
-    width: 0.2rem;
-    margin-left: .15rem;
 }
