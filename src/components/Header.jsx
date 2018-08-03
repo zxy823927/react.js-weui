@@ -7,10 +7,10 @@ class mainPage extends Component {
         return (
             <div >
                 <nav className='main-menu'>
-                    <NavLink to='/home' activeStyle={{color: 'red'}}>首页</NavLink>
-                    <NavLink to='/events' activeStyle={{color: 'red'}}>菜品</NavLink>
-                    <NavLink to='/ShoppingCart' activeStyle={{color: 'red'}}>购物车</NavLink>
-                    <NavLink to='/myHome' activeStyle={{color: 'red'}}>我的</NavLink>
+                    <NavLink to='/home' activeStyle={{color: '#f4629b'}}>首页</NavLink>
+                    <NavLink to='/goodList' activeStyle={{color: '#f4629b'}}>菜品</NavLink>
+                    <NavLink to='/ShoppingCart' activeStyle={{color: '#f4629b'}}>购物车</NavLink>
+                    <NavLink to='/myHome' activeStyle={{color: '#f4629b'}}>我的</NavLink>
                 </nav>
 
 

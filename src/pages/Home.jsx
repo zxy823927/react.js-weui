@@ -1,15 +1,75 @@
 import React, {Component} from 'react';
 import './Home.css';
 import Header from '../components/Header.jsx';
+import iScroll from 'iscroll'
+import ReactIScroll from 'react-iscroll'
 
-class App extends Component {
+class Home extends Component {
+    constructor(props) {
+        super(props)
+
+        let arr = [
+            {id: 1, name: '热卖'},
+            {id: 2, name: '会员专享'},
+            {id: 3, name: '水果'},
+            {id: 4, name: '蔬菜'},
+            {id: 5, name: '肉蛋'},
+            {id: 6, name: '肉蛋6'},
+            {id: 7, name: '水产7'},
+            {id: 8, name: '水产8'},
+            {id: 9, name: '水产9'}];
+
+        this.state = {
+            y: 0,
+            isScrolling: false,
+            arr: arr,
+            // lastId: len,
+            iScrollOptions: {
+                mouseWheel: true,
+                scrollbars: true,
+                scrollX: true,
+                scrollY: false
+            }
+        };
+        this.navTab = this.navTab.bind(this);
+    };
+
+    //nav 的切換
+
+    navTab = () => {
+        alert('44')
+
+
+    }
+
     render() {
+        const {iScrollOptions} = this.state;
         return (
             <div className="home">
                 <div className="home-content">
                     <div className="homeTop">
-                        {/*<Button className='homeTop-button'>免费使用</Button>*/}
+
+                        <ReactIScroll iScroll={iScroll} options={iScrollOptions}>
+                            <div style={{width: "120%"}}>
+
+                                <ul className="nav">
+                                    {
+                                        this.state.arr.map(item => {
+
+                                            return <li key={item.id} className='nav-list' onClick={this.navTab}> {item.name}</li>
+                                        })
+
+                                    }
+
+                                </ul>
+                            </div>
+
+                        </ReactIScroll>
+
+
                     </div>
+
+
                     <div className="home-middle">
                         <div>
 
@@ -25,4 +85,4 @@ class App extends Component {
 }
 
 
-export default App;
+export default Home;

@@ -1,5 +1,3 @@
-
-
 /*
 登录页的样式
 */
@@ -51,9 +49,10 @@
     border-radius: 0.15rem;
     margin-right: 0.1rem;
 }
-.login-top p .two{
+
+.login-top p .two {
     font-size: 0.30rem;
-    color:white ;
+    color: white;
 }
 
 .login-btn {
@@ -101,20 +100,23 @@
 mainPage的样式
 
 */
-.main-menu{
+.main-menu {
     height: 0.98rem;
     width: 100%;
     display: -ms-flexbox;
     display: flex;
-    background: #1aad1985;
     align-items: center;
+    border-top: 1px solid #cccccc;
 }
-.main-menu a{
+
+.main-menu a {
     flex: 1;
     text-align: center;
     color: #333;
+    font-size: 0.36rem;
 }
-.selectedStyle{
+
+.selectedStyle {
     color: red;
 }
 
@@ -125,47 +127,53 @@ mainPage的样式
     flex-direction: column;
     height: 100%;
 }
-.home-content{
+
+.home-content {
     flex: 1;
 }
 
 .homeTop {
-    background: url("../images/banner.jpg") no-repeat;
     background-size: 100%;
-    height: 3.5rem;
+    border-bottom: 1px solid #cccccc;
     width: 100%;
     display: flex;
     align-items: center;
 }
 
-button.weui-btn.homeTop-button {
-    width: 2.4rem;
-    color: #fff;
-    background: #4a6772;
-    margin-top: 1.2rem;
-    height: 0.66rem;
+.nav {
     display: flex;
+    height: 0.98rem;
     align-items: center;
-    padding: 0px;
-    line-height: normal;
-    justify-content: center;
-    border-radius: 0;
+    width: 140%;
 
 }
+.nav::-webkit-scrollbar{
+    display: none;
+}
+
+.nav-list {
+    display: inline-block;
+    padding: 0 0.2rem;
+    height: 100%;
+    line-height: 0.98rem;
+}
+.iScrollHorizontalScrollbar {
+    display: none;
+}
+
 
 .home-middle {
     flex: 1;
 }
 
-
 /*我的页面样式*/
-.MyHome{
+.MyHome {
     display: flex;
     flex-direction: column;
     height: 100%;
 }
 
-.my-home-top{
+.my-home-top {
     flex: 1;
 
 }
