@@ -1,0 +1,171 @@
+
+
+/*
+登录页的样式
+*/
+.login {
+    height: 100%;
+    width: 100%;
+    background: url("../images/login-bg.jpg") no-repeat;
+    background-size: 100% 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.login-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+
+}
+
+.login-center {
+    width: 100%;
+    text-align: center;
+}
+
+.login-top {
+    display: flex;
+    width: 5rem;
+    margin: 0 auto;
+}
+
+.login-top p {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.login-top p .one {
+    display: inline-block;
+    width: 0.15rem;
+    height: 0.15rem;
+    border: 2px solid #ffffff;
+    border-radius: 0.15rem;
+    margin-right: 0.1rem;
+}
+.login-top p .two{
+    font-size: 0.30rem;
+    color:white ;
+}
+
+.login-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.38rem;
+    background: rgba(114, 54, 21, 0.72);
+    width: 5rem;
+    height: 0.78rem;
+    margin: 1rem auto;
+    color: white;
+    letter-spacing: 4px;
+}
+
+.login-input {
+    display: block;
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    border-bottom: 1px solid white;
+    width: 5rem;
+    color: white;
+    height: 0.5rem;
+    text-align: center;
+    margin: 0.5rem auto;
+}
+
+.login-input::-webkit-input-placeholder { /* WebKit browsers */
+    color: white;
+}
+
+.login-input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: white;
+}
+
+.login-input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: white;
+}
+
+.login-input:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: white;
+}
+
+/*
+mainPage的样式
+
+*/
+.main-menu{
+    height: 0.98rem;
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    background: #1aad1985;
+    align-items: center;
+}
+.main-menu a{
+    flex: 1;
+    text-align: center;
+    color: #333;
+}
+.selectedStyle{
+    color: red;
+}
+
+/*HOME页的样式*/
+.home {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.home-content{
+    flex: 1;
+}
+
+.homeTop {
+    background: url("../images/banner.jpg") no-repeat;
+    background-size: 100%;
+    height: 3.5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+button.weui-btn.homeTop-button {
+    width: 2.4rem;
+    color: #fff;
+    background: #4a6772;
+    margin-top: 1.2rem;
+    height: 0.66rem;
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    line-height: normal;
+    justify-content: center;
+    border-radius: 0;
+
+}
+
+.home-middle {
+    flex: 1;
+}
+
+
+/*我的页面样式*/
+.MyHome{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.my-home-top{
+    flex: 1;
+
+}

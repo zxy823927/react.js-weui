@@ -6,7 +6,7 @@ import './buyHome.css';
 class App extends Component {
     render() {
         return (
-            <div className="App">
+            <div className="App">y
                 <div className="homeTop">
                     <Button className='homeTop-button'>免费使用</Button>
                 </div>

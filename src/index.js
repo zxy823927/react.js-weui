@@ -1,12 +1,29 @@
 import React from 'react';
 
 import ReactDOM from 'react-dom';
-import { Router, Route, Link } from 'react-router'
 import 'weui';
 import 'react-weui/build/packages/react-weui.css';
 import './index.css';
-import Home from './components/Home';
+import Router from './router/';
+
+import { AppContainer } from 'react-hot-loader';
+// import { browserHistory } from 'react-router'
+// import {Provider} from 'react-redux'
 
 
 
-ReactDOM.render(<Home />, document.getElementById('root'));
+const render = Component => {
+    ReactDOM.render(
+        //绑定redux、热加载
+            <AppContainer>
+                <Component />
+            </AppContainer>
+                ,
+        document.getElementById('root'),
+    )
+}
+
+render(Router);
+console.log(Router)
+
+// ReactDOM.render(<Login />, document.getElementById('root'));

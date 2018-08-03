@@ -1,5 +1,27 @@
-body {
+body,html {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family:  PingFangSC-Regular, PingFangSC-Medium,sans-serif ,"Microsoft YaHei","微软雅黑",Arial,Segoe UI, helvetica;
+  height: 100%;
+  font-size: 14px;
+  width: 100%;
+}
+/*div,p,ul,li,ol,dl,dd,dt{*/
+  /*padding: 0;*/
+  /*margin: 0;*/
+/*}*/
+*{
+  padding: 0;
+  margin: 0;
+}
+#root{
+  height: 100%;
+  width: 100%;
+}
+p{
+  display: block;
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
 }
