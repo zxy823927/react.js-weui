@@ -20,25 +20,28 @@ class Home extends Component {
             {id: 9, name: '水产9'}];
 
         this.state = {
-            y: 0,
-            isScrolling: false,
             arr: arr,
-            // lastId: len,
+            addClass:1,
             iScrollOptions: {
                 mouseWheel: true,
-                scrollbars: true,
+                scrollbars: false,
                 scrollX: true,
                 scrollY: false
             }
         };
-        this.navTab = this.navTab.bind(this);
+        // this.navTab = this.navTab.bind(this);
     };
 
     //nav 的切換
+    navTab(id,event){
+        var that = this;
 
-    navTab = () => {
-        alert('44')
+        // 点击按钮改变样式
+        that.setState({
+            addClass: id
+        });
 
+        console.log(id)
 
     }
 
@@ -50,19 +53,24 @@ class Home extends Component {
                     <div className="homeTop">
 
                         <ReactIScroll iScroll={iScroll} options={iScrollOptions}>
-                            <div style={{width: "120%"}}>
+                            {/*<div style={{width: "120%"}}>*/}
 
                                 <ul className="nav">
                                     {
-                                        this.state.arr.map(item => {
+                                        this.state.arr.map((item,index) => {
+                                            //第一种绑定多个class
+                                            // return (<li key={item.id} className={ ['nav-list', this.state.addClass === item.id && 'is-active'].join(' ')}
+                                            //            onClick={this.navTab.bind(this,item.id)}> {item.name}</li>)
+                                            //第二种绑定多个class
+                                            return (<li key={item.id} className={`nav-list  ${this.state.addClass === item.id ? 'is-active':''}` }
+                                                        onClick={this.navTab.bind(this,item.id)}> {item.name}</li>)
 
-                                            return <li key={item.id} className='nav-list' onClick={this.navTab}> {item.name}</li>
                                         })
 
                                     }
 
                                 </ul>
-                            </div>
+                            {/*</div>*/}
 
                         </ReactIScroll>
 

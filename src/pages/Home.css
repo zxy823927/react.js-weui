@@ -142,7 +142,7 @@ mainPage的样式
 
 .nav {
     display: flex;
-    height: 0.98rem;
+    /*height: 0.98rem;*/
     align-items: center;
     width: 140%;
 
@@ -153,14 +153,15 @@ mainPage的样式
 
 .nav-list {
     display: inline-block;
-    padding: 0 0.2rem;
+    margin: 0 0.2rem;
     height: 100%;
-    line-height: 0.98rem;
-}
-.iScrollHorizontalScrollbar {
-    display: none;
+    line-height: 0.90rem;
 }
 
+.is-active{
+    color: #f4629b;
+    border-bottom: 2px solid #f4629b;
+}
 
 .home-middle {
     flex: 1;
