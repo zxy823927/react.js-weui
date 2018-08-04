@@ -1,9 +1,8 @@
 import React, {Component} from 'react';
 import './Home.css';
-import Header from '../components/Header.jsx';
+import BottomBar from '../components/BottomBar.jsx';
 import iScroll from 'iscroll'
 import ReactIScroll from 'react-iscroll'
-
 class Home extends Component {
     constructor(props) {
         super(props)
@@ -85,7 +84,7 @@ class Home extends Component {
 
                     </div>
                 </div>
-                <Header/>
+                <BottomBar/>
 
             </div>
         );

@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './Home.css';
-import Header from '../components/Header.jsx';
+import BottomBar from '../components/BottomBar.jsx';
 
 class GoodList extends Component {
     goDetail = () => {
@@ -24,7 +24,7 @@ class GoodList extends Component {
                     </ul>
                 </div>
 
-                <Header/>
+                <BottomBar/>
             </div>
         );
     }

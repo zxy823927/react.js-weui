@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './Home.css';
-import Header from '../components/Header.jsx';
+import BottomBar from '../components/BottomBar.jsx';
 
 class MyHome extends Component {
     goDetail = () => {
@@ -24,7 +24,7 @@ class MyHome extends Component {
                     </ul>
                 </div>
 
-                <Header/>
+                <BottomBar/>
             </div>
         );
     }

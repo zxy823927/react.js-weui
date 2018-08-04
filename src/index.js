@@ -5,7 +5,6 @@ import 'weui';
 import 'react-weui/build/packages/react-weui.css';
 import './index.css';
 import Router from './router/';
-
 import { AppContainer } from 'react-hot-loader';
 
 import initReactFastclick from 'react-fastclick';
