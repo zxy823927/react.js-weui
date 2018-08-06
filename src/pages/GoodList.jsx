@@ -15,12 +15,10 @@ class GoodList extends Component {
                 <div className="my-home-top">
                     <div>
 
-                        我的
+                        菜品列表
                     </div>
                     <ul>
-                        <li onClick={this.goDetail}>
-
-                        </li>
+                      <li>白菜</li>
                     </ul>
                 </div>
 

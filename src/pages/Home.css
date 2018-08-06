@@ -116,6 +116,12 @@ mainPage的样式
     font-size: 0.30rem;
 }
 
+.main-menu a img {
+    height: 0.3rem;
+    width: 0.3rem;
+    display: inline-block;
+}
+
 .selectedStyle {
     color: red;
 }
@@ -147,7 +153,8 @@ mainPage的样式
     width: 140%;
 
 }
-.nav::-webkit-scrollbar{
+
+.nav::-webkit-scrollbar {
     display: none;
 }
 
@@ -158,7 +165,7 @@ mainPage的样式
     line-height: 0.90rem;
 }
 
-.is-active{
+.is-active {
     color: #f4629b;
     border-bottom: 2px solid #f4629b;
 }
@@ -172,9 +179,69 @@ mainPage的样式
     display: flex;
     flex-direction: column;
     height: 100%;
+    background: #ffffff;
 }
 
 .my-home-top {
     flex: 1;
+}
 
+.my-home-logo {
+    display: flex;
+    padding: 0.5rem 0.2rem;
+    align-items: center;
+    background: #f9f9f9;
+}
+
+.my-home-logo img.logo {
+    height: 1.2rem;
+    width: 1.2rem;
+    border-radius: 50%;
+    display: inline-flex;
+    margin-right: 0.3rem;
+
+}
+
+.my-home-logo div.name-right {
+    flex: 1;
+}
+.my-home-logo .level{
+
+    padding: 0 0.2rem;
+    background: #dfdada;
+    border-radius: 0.2rem;
+}
+
+.my-home-logo div.name-right p:first-child {
+    font-size: 0.36rem;
+    margin-bottom: 0.1rem;
+}
+
+.my-home-logo div.name-right p:last-child {
+    font-size: 0.24rem;
+}
+
+.my-home-list {
+    padding: 0 0.3rem;
+}
+
+.my-home-list li {
+    list-style: none;
+    border-bottom: 0.5px solid #cccccc;
+    padding: 0.3rem 0;
+    display: flex;
+    align-items: center;
+}
+.my-home-list li p{
+    flex: 1;
+    font-size: 0.26rem;
+}
+.my-home-list li img{
+    display: inline-flex;
+    width: 0.15rem;
+    height: 0.25rem;
+}
+.my-home-list li .yu{
+    color: #f4629b;
+    padding-right: 0.2rem;
 }

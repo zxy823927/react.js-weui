@@ -30,6 +30,13 @@ class Home extends Component {
         };
         // this.navTab = this.navTab.bind(this);
     };
+    componentWillMount(){
+        console.log("在渲染前调用,在客户端也在服务端。")
+    }
+
+    componentDidMount(){
+        console.log('555')
+    }
 
     //nav 的切換
     navTab(id,event){

@@ -4,6 +4,7 @@ body,html {
   font-family:  PingFangSC-Regular, PingFangSC-Medium,sans-serif ,"Microsoft YaHei","微软雅黑",Arial,Segoe UI, helvetica;
   height: 100%;
   font-size: 14px;
+  line-height: 1.4;
   width: 100%;
   -webkit-tap-highlight-color: transparent;
 }
